@@ -1,0 +1,12 @@
+# 录取算法模块
+#
+# 本目录用于存放四批次投档算法的实现，由组长负责。
+# 计划中的类（名称待组内协商后确定）：
+#   - ScoreGrouper          梯度线分组
+#   - Batch1SelfEnroll      第一批：自主招生
+#   - Batch2SchoolQuota     第二批：指标到校（校内竞争）
+#   - Batch3Citywide        第三批：全市梯度投档
+#   - Batch4                第四批
+#   - QuotaTransferService  余额结转与流水记录
+#
+# 协商完成后删除本占位文件。

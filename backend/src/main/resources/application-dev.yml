@@ -1,0 +1,12 @@
+# 开发环境配置
+# 数据库名统一使用 admission_db，首次使用请先执行 sql/01-schema.sql 建库建表。
+# 密码请填本机 MySQL 的实际密码；此文件若含真实密码，请勿提交到公开仓库。
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/admission_db?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: ""
+
+# 使用数据库前，请到 application.yml 删除 spring.autoconfigure.exclude，
+# 否则数据源不会生效。

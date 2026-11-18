@@ -1,0 +1,30 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: admission-server
+  profiles:
+    active: dev
+
+  # 【临时】基础框架阶段先不连数据库，让项目「开箱即可启动」。
+  # 组员建好 admission_db 并填好 application-dev.yml 的账号密码后，
+  # 删除下面这两行 exclude，数据库就会自动装配。
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+
+# MyBatis-Plus 配置
+# 说明：mapper 包尚未创建，@MapperScan 暂时注释，等组员添加 Mapper 接口后再放开
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#  global-config:
+#    db-config:
+#      id-type: auto
+#      table-prefix: t_
+
+logging:
+  level:
+    com.gzhu.admission: debug
