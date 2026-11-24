@@ -142,3 +142,4 @@ chore(deps): 升级 MyBatis-Plus 至 3.5.5
 | 文档 | 说明 |
 |---|---|
 | [docs/team-division-and-plan.md](docs/team-division-and-plan.md) | 团队分工与开发规划（责任人、进度、风险、契约） |
+| [docs/rules.md](docs/rules.md) | 录取规则清单 v2.0（12 组 73 条规则＋裁决记录，全组规则的唯一权威文档） |
